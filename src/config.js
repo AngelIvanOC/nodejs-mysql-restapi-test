@@ -1,12 +1,15 @@
-import { config } from "dotenv";
-config();
-
+// Configuración sin dotenv para Railway
 export const PORT = process.env.PORT || 3000;
+export const DB_PORT = process.env.DB_PORT || 3306;
+export const DB_HOST = process.env.DB_HOST || "localhost";
+export const DB_USER = process.env.DB_USER || "root";
+export const DB_PASSWORD = process.env.DB_PASSWORD || "root";
+export const DB_DATABASE = process.env.DB_DATABASE || "railway";
 
-export const DB_PORT = process.env.DB_PORT || process.env.MYSQLPORT || 3306;
-export const DB_HOST =
-  process.env.DB_HOST || process.env.MYSQLHOST || "localhost";
-export const DB_USER = process.env.DB_USER || process.env.MYSQLUSER || "root";
-export const DB_PASSWORD =
-  process.env.DB_PASSWORD || process.env.MYSQLPASSWORD || "root";
-export const DB_DATABASE = process.env.MYSQLDATABASE || process.env.DB_DATABASE;
+// Debug: mostrar las variables (quitar después del debug)
+console.log("=== DEBUG VARIABLES ===");
+console.log("DB_HOST:", DB_HOST);
+console.log("DB_PORT:", DB_PORT);
+console.log("DB_USER:", DB_USER);
+console.log("DB_DATABASE:", DB_DATABASE);
+console.log("=======================");
