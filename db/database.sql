@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS companydbFazt;
+USE companydbFazt;
+
+CREATE TABLE emplyee (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(45) DEFAULT NULL,
+    salary INT(5) DEFAULT NULL,
+    PRIMARY KEY (id)   
+);
