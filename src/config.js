@@ -4,7 +4,9 @@ config();
 export const PORT = process.env.PORT || 3000;
 
 export const DB_PORT = process.env.DB_PORT || process.env.MYSQLPORT || 3306;
-export const DB_HOST = process.env.DB_HOST || process.env.MYSQLHOST || "localhost";
+export const DB_HOST =
+  process.env.DB_HOST || process.env.MYSQLHOST || "localhost";
 export const DB_USER = process.env.DB_USER || process.env.MYSQLUSER || "root";
-export const DB_PASSWORD = process.env.DB_PASSWORD || process.env.MYSQLPASSWORD || "root";
-export const DB_DATABASE = process.env.DB_DATABASE || process.env.MYSQLDATABASE;
+export const DB_PASSWORD =
+  process.env.DB_PASSWORD || process.env.MYSQLPASSWORD || "root";
+export const DB_DATABASE = process.env.MYSQLDATABASE || process.env.DB_DATABASE;
