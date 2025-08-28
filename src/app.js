@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/employess", employeesRoutes);
+app.use(employeesRoutes);
 
 app.use(indexRoutes);
 
